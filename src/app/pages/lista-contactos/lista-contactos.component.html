@@ -1,0 +1,8 @@
+<h2>lista de contactos</h2>
+<ul>
+    <li *ngFor="let contacto of contactos">
+        <a href="#" [routerLink]="contactos">{{contacto.name}}</a><!--Aqui se usa corchetes en el routerLink para acceder a los datos del componente definido-->
+        <p>{{contacto.id}}</p>
+        <p>{{contacto.name}}</p>
+    </li>
+</ul>

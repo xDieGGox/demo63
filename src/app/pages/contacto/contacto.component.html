@@ -1,0 +1,28 @@
+<h3>CONTACTO</h3>
+
+
+<form action="">
+    <label for="txtCedula">Cedula:</label>
+    <input id="txtCedula" name="txtCedula" type="text" [(ngModel)]="id">  <!-- Aqui primero hace un get con parentesis y un set con corchetes -->
+    <br>
+    <label for="txtNombre">Nombre:</label>
+    <input id="txtNombre" name="txtNombre" type="text" [(ngModel)]="name">
+</form>
+
+<h2>DATOS: </h2>
+<p>{{id}}</p>
+<p>{{name}}</p>
+
+
+<button id="botonContacto" (click)="goAcercaDe()">Acerca de</button> <!-- Aqui en este button se tiene el click entre parentesis pues seria como un SET para enviar -->
+
+<h1>FORMULARIO PERSONA</h1>
+<form action="">
+    <label for="txtCedula">Cedula:</label>
+    <input id="txtCedula" name="txtCedula" type="text" [(ngModel)]="persona.id">  <!-- Aqui primero hace un get con parentesis y un set con corchetes -->
+    <br>
+    <label for="txtNombre">Nombre:</label>
+    <input id="txtNombre" name="txtNombre" type="text" [(ngModel)]="persona.name">
+</form>
+
+<button id="botonsaveContacto" (click)="savePersona()">Guardad</button>
